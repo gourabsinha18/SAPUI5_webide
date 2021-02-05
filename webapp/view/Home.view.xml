@@ -1,0 +1,18 @@
+<mvc:View controllerName="com.agecalculator.ZAgeCalculator.controller.Home" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>WELCOME}">
+					<content>
+						<Panel id="panel" headerText="AGE CALCULATOR" width="auto"/>
+						<VBox>
+							<Label text="Please Choose Your DOB" labelFor="DP1" design="Bold" width="auto"/>
+							<DatePicker id="DP1" placeholder="Enter Date ..." displayFormat="long" change="handlechange" width="auto"/>
+							<Button id="idbtn" text="CALCULATE" type="Emphasized" press="onpress" width="auto"></Button>
+						</VBox>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
